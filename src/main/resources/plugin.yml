@@ -1,0 +1,11 @@
+name: Settings-Essentials
+version: '${version}'
+main: tech.marconymous.settingsessentials.SettingsEssentials
+api-version: 1.17
+authors: [ Marconymous ]
+description: E E
+website: github.com/Marconymous
+commands:
+  whitelist:
+    description: wow clean man
+    usage: /<command>
