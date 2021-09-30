@@ -12,7 +12,9 @@ class EntityBowEvent(plugin: SettingsEssentials) : EventContainer(plugin) {
         if (e.entity !is Player)
             return
 
-        val type = plugin.config.playerBowProjectiles[e.entity.uniqueId.toString()] ?: return
+        val bow = e.bow
+
+        val type = plugin.config.bowProjectiles[bow] ?: return
 
         val entity = e.entity.world.spawnEntity(e.projectile.location, type)
 

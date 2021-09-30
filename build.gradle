@@ -22,9 +22,10 @@ repositories {
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.31'
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.5.31"
 }
 
-def targetJavaVersion = 8
+def targetJavaVersion = 15
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     sourceCompatibility = javaVersion

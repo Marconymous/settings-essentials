@@ -9,6 +9,6 @@ commands:
   whitelist:
     description: wow clean man
     usage: /<command>
-  arrow:
+  bow:
     description: Sets the Entity for bows dies das
     usage: /<command> [entity]
