@@ -9,6 +9,9 @@ import tech.marconymous.settingsessentials.string.lime
 import tech.marconymous.settingsessentials.string.red
 
 class WhitelistCommand(plugin: SettingsEssentials) : CommandExecutor(plugin) {
+    override val command: String
+        get() = "whitelist"
+
     override fun onCommand(sender: CommandSender, cmd: Command, label: String, args: Array<out String>): Boolean {
         if (args.isEmpty()) {
             val whitelist = !Bukkit.getServer().isWhitelistEnforced

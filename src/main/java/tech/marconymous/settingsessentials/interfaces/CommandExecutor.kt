@@ -5,5 +5,5 @@ import tech.marconymous.settingsessentials.SettingsEssentials
 import tech.marconymous.settingsessentials.utils.SettingsConfig
 
 abstract class CommandExecutor(val config: SettingsEssentials) : CommandExecutor {
-    val command: String = ""
+    abstract val command: String
 }
