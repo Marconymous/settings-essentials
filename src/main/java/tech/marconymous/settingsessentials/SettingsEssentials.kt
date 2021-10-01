@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin
 import tech.marconymous.settingsessentials.functions.entitybow.EntityBowCommand
 import tech.marconymous.settingsessentials.functions.entitybow.EntityBowEvent
 import tech.marconymous.settingsessentials.functions.entitybow.EntityBowTabCompletion
+import tech.marconymous.settingsessentials.functions.hook.HookEvent
 import tech.marconymous.settingsessentials.functions.randomevents.ItemBreak
 import tech.marconymous.settingsessentials.functions.serverping.ServerPing
 import tech.marconymous.settingsessentials.functions.sleep.SleepEvent
@@ -41,6 +42,7 @@ class SettingsEssentials : JavaPlugin() {
         registerEvent(ServerPing(this))
         registerEvent(ItemBreak(this))
         registerEvent(EntityBowEvent(this))
+        registerEvent(HookEvent(this))
     }
 
     override fun onDisable() {
